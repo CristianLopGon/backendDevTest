@@ -19,15 +19,5 @@ public class ProductRestController implements ProductApi {
 	@Override
 	public ResponseEntity<Set<ProductDetail>> getProductSimilar(String productId) {
 		return service.getSimilarProducts(productId);
-		/*
-		 * if (productId != null && !productId.isEmpty()) { Set<Integer> setSimilars =
-		 * service.getProductSimilar(productId);
-		 * 
-		 * if (setSimilars != null && setSimilars.size() > 0) { return
-		 * service.getProductDetail(setSimilars); } else { throw new
-		 * ProductNotfoundException(); }
-		 * 
-		 * } else { throw new ProductNotfoundException(); }
-		 */
 	}
 }

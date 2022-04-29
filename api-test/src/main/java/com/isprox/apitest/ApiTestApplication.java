@@ -10,7 +10,6 @@ public class ApiTestApplication {
 
 	@Bean
 	public RestTemplate restTemplate() {
-
 		return new RestTemplate();
 	}
 
